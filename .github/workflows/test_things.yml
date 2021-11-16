@@ -2,7 +2,7 @@ name: Test stuff
 on:
   push:
     branches:
-      - main
+      - '**'
 jobs:
   build_deploy:
     runs-on: ubuntu-18.04
