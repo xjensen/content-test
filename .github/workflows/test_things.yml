@@ -3,9 +3,13 @@ on:
   pull_request:
     branches:
       - '**'
+      - '!main'
+      - '!staging'
   push:
     branches:
       - '**'
+      - '!main'
+      - '!staging'
 jobs:
   build_deploy:
     runs-on: ubuntu-18.04
