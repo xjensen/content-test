@@ -1,8 +1,11 @@
 name: Test stuff
 on:
   pull_request:
-    branches:
-      - '**'
+    types:
+      - opened
+      - synchronize
+      - ready_for_review
+      - reopened
   push:
     branches:
       - '**'
